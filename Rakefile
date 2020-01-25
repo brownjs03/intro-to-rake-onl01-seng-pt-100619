@@ -4,9 +4,9 @@ task :hello do
   puts "hello from Rake!"
 end
 
-desc 'outputs confirmation to the terminal'
-task :confirm do 
-  puts "Yep, this works!"
+desc 'outputs hola to the terminal'
+task :hola do 
+  puts "hola de Rake!"
 end 
 end 
 
@@ -15,6 +15,8 @@ namespace :db do
   task :migrate => :environment do 
     student.create_table
   end 
+  
+  desc 'seed the database with some dummy data'
 end 
 
 task :environment do
